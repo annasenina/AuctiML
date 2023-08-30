@@ -2,9 +2,12 @@
 # Рекомендательный сервис по оценке открытых торгов по земельным участкам
 Проект в рамках [ML System Design Autumn 23/24](https://ods.ai/tracks/ml-system-design-23/competitions/mlsys23-project)   
   
+#### ML Design Doc
+[ML Design Doc](systemdesign/design.md)
+
 #### Общее решение
 Предсказание результатов торгов по земельным участкам.
-[ML Design Doc](systemdesign/design.md)
+
 
 #### Архитектура решения
 Решение состоит из:  
