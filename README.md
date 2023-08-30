@@ -7,13 +7,14 @@
 [ML Design Doc](systemdesign/design.md)
 
 #### Архитектура решения
-
-![arch](media/main_image1.png)
-
 Решение состоит из:  
  - [Модель](model)   
  - [Backend (FastApi)](front)  
  - [Frontend (Telegram бот)](back)  
+ 
+
+![arch](media/main_image1.png)
+
  
  
  
