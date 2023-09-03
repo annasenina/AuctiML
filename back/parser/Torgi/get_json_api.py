@@ -18,9 +18,10 @@ class APIDownload:
     """Скачивание JSON из API по указаным урлам"""
 
     def __init__(self, path: str = ''):
-        self.thread_local = local()
-        if not hasattr(self.thread_local, 'session'):
-            self.thread_local.session = requests.Session()
+        thread_local = local()
+        if not hasattr(thread_local, 'session'):
+            thread_local.session = requests.Session()
+        self.session = thread_local.session
         self.path = path
 
     def download_link(self, fname: str, url: str) -> None:
@@ -29,7 +30,7 @@ class APIDownload:
         :param fname: Название файла куда сохрнаять скачанный json
         :param url: URL для выгрузки json
         """
-        with self.thread_local.session.get(url) as response:
+        with self.session.get(url) as response:
             if response.status_code == 200:
                 with open(fname + ".json", "w", encoding="utf-8") as file:
                     file.write(response.text)
@@ -126,11 +127,11 @@ if __name__ == "__main__":
     torgi_urls = TorgiGenerateURL()
 
     # генерируем URL страниц списков объектов
-    url_dict = torgi_urls.generate_url_list_objects(batch_size=3, pages=3, cat_code=2)
+    url_dict = torgi_urls.generate_url_list_objects(batch_size=10, pages=15, cat_code=2)
     print(f"Выбрано {len(url_dict)} страниц с торгами")
-    print(url_dict)
+
     # Скачиываем страницы списков объектов
-    path_list_objects = 'list_obj_jsons'
+    path_list_objects = PATH + 'list_obj_jsons'
     api_download.download_all(url_dict, sub_path=path_list_objects, workers=5)
 
     # Определяем id торгов на основе скачанных json page
@@ -139,13 +140,13 @@ if __name__ == "__main__":
 
     # генерируем URL для каждого объекта
     objects_url = torgi_urls.generate_url_ad_torgi(objects_id)
-    path_objects = 'torgi_json'
+    path_objects = PATH + 'torgi_json'
     api_download.download_all(objects_url, sub_path=path_objects, workers=5)
 
     # Формируем из json объектов DataFrame
     df_torgi = torgi_urls.get_objects(json_path=path_objects)
     if df_torgi is not None:
-        PATH_DATASET = PATH # + "../../../datasets/"
+        PATH_DATASET = PATH  # + "../../../datasets/"
         df_torgi.set_index('id').to_csv(PATH_DATASET + "torgi_dataset.csv", index_label='id')
 
     print(f'download {len(objects_url)} objects from {len(url_dict)} pages')
