@@ -145,8 +145,7 @@ if __name__ == "__main__":
     # Формируем из json объектов DataFrame
     df_torgi = torgi_urls.get_objects(json_path=path_objects)
     if df_torgi is not None:
-        # PATH_DATASET = PATH + "../../../datasets/"
-        PATH_DATASET = PATH
+        PATH_DATASET = PATH # + "../../../datasets/"
         df_torgi.set_index('id').to_csv(PATH_DATASET + "torgi_dataset.csv", index_label='id')
 
     print(f'download {len(objects_url)} objects from {len(url_dict)} pages')
