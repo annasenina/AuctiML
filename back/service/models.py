@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from utils.validator import isURLValid
+from model.predictForURL import predictForURL
 
 
 class Url(BaseModel):
@@ -11,4 +13,10 @@ app = FastAPI()  # noqa: pylint=invalid-name
 
 @app.post("/predict")
 def predict(data: Url):
-    return "Вы ввели данные:  "+data.url+". Ваш запрос обрабатывается"
+    # Проверить, что url валидный
+    if not isURLValid(data.url):
+        "Указан неверный URL, попробуйте указать другой URL"
+    # Предсказать данные по лоту
+    return predictForURL(data.url)
+
+
