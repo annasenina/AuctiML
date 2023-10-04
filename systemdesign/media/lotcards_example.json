@@ -1,0 +1,351 @@
+{
+   "id":"22000061510000000025_2",
+   "lotName":"Земельный участок с кадастровым номером 90:07:270601:781, площадью 51824 кв. м., расположенный по адресу: Республика Крым, Ленинский район, с. Чистопольское сельское поселение, за границами населенных пунктов, из земель КСП « Родина», лот №50-51, участок №16, категория земель – «земли сельскохозяйственного назначения»; вид разрешенного использования – сельскохозяйственное использование.",
+   "lotStatus":"DETERMINING_WINNER",
+   "biddForm":{
+      "code":"EA",
+      "name":"Электронный аукцион"
+   },
+   "noticeNumber":"22000061510000000025",
+   "lotNumber":2,
+   "biddType":{
+      "code":"ZK",
+      "name":"Аренда и продажа земельных участков"
+   },
+   "subjectRFCode":"91",
+   "lotDescription":"указано в аукционной документации",
+   "priceMin":74600.0,
+   "priceStep":2238.0,
+   "prevBiddInfo":"",
+   "previousProcedures":[
+      
+   ],
+   "lotImages":[
+      "64f24d608d3e1d5743decf62"
+   ],
+   "lotAttachments":[
+      {
+         "fileId":"64f24d608d3e1d5743decf62",
+         "signatureId":"64f24f3571b9eb32f09ee7ef",
+         "fileName":"Лот 2.jpg",
+         "fileSize":1050148,
+         "uploadDate":"2023-09-01T20:45:18.990+00:00",
+         "hash":"3316c44e7711cb80f87607fc1f700eb8bbd06e1f6be00f903bfa31610cf8b431",
+         "inactive":false,
+         "checkResult":"OK"
+      }
+   ],
+   "noticeAttachments":[
+      {
+         "fileId":"64f249f18d3e1d5743decf37",
+         "signatureId":"64f24f2727179309d8ac202c",
+         "fileName":"Постановление №171 от 23.08.2023 Чистополье.pdf",
+         "fileSize":175043,
+         "uploadDate":"2023-09-01T20:30:40.155+00:00",
+         "hash":"f86d35f56789950ade2b765f1562c6ddcba55aeba84e390d14e31fa2ffd4be85",
+         "attachmentTypeCode":"Other",
+         "attachmentTypeName":"Иное",
+         "inactive":false,
+         "checkResult":"OK"
+      },
+      {
+         "fileId":"64f24a004a9ee0449d7df69b",
+         "signatureId":"64f24f172ea2733aa86203c0",
+         "fileName":"Извещение.docx",
+         "fileSize":37774,
+         "uploadDate":"2023-09-01T20:30:56.038+00:00",
+         "hash":"902516a6969e9876d860273d7fbde5d5d64e80aae56c74ce6cb44ad48c6b1120",
+         "attachmentTypeCode":"Auction_Document",
+         "attachmentTypeName":"Документация аукциона",
+         "inactive":false,
+         "checkResult":"OK"
+      },
+      {
+         "fileId":"64f24a137b24875f7af6d05c",
+         "signatureId":"64f24f3071b9eb32f09ee7ee",
+         "fileName":"Приложение 1- форма заявки.docx",
+         "fileSize":20323,
+         "uploadDate":"2023-09-01T20:31:15.145+00:00",
+         "hash":"2c275d580e6d131f994a815777d320cafc38f5f96a4193eac4c24a055eb568eb",
+         "attachmentTypeCode":"Application_Form",
+         "attachmentTypeName":"Форма заявки",
+         "inactive":false,
+         "checkResult":"OK"
+      },
+      {
+         "fileId":"64f24a1e7b24875f7af6d05f",
+         "signatureId":"64f24f2c27179309d8ac202d",
+         "fileName":"Договор аренды.docx",
+         "fileSize":24608,
+         "uploadDate":"2023-09-01T20:31:26.033+00:00",
+         "hash":"4ee8f237408c77ee7e9bf5edae5018dcdf5bc59b8fc48543aaf6b4cc461a7f28",
+         "attachmentTypeCode":"Draft_Contract",
+         "attachmentTypeName":"Проект договора",
+         "inactive":false,
+         "checkResult":"OK"
+      }
+   ],
+   "characteristics":[
+      {
+         "characteristicValue":[
+            {
+               "value":"Сельскохозяйственное использование",
+               "selectNsi":"PermittedUse",
+               "code":"1.0",
+               "name":"Сельскохозяйственное использование",
+               "actual":false
+            }
+         ],
+         "name":"Вид разрешённого использования земельного участка",
+         "code":"PermittedUse",
+         "type":"Multiselect"
+      },
+      {
+         "characteristicValue":"90:07:270601:781",
+         "name":"Кадастровый номер земельного участка",
+         "code":"CadastralNumber",
+         "type":"Text(20)"
+      },
+      {
+         "characteristicValue":51824.0,
+         "name":"Площадь земельного участка",
+         "code":"SquareZU",
+         "unit":{
+            "code":"055",
+            "name":"Квадратный метр",
+            "symbol":"м^2"
+         },
+         "type":"Decimal"
+      },
+      {
+         "characteristicValue":"90:07:270601:781",
+         "name":"Регистрационный номер ЕГРОКН",
+         "code":"regNumberEGROKN",
+         "type":"String"
+      }
+   ],
+   "currencyCode":"643",
+   "etpCode":"ETP_RTS",
+   "category":{
+      "code":"4",
+      "name":"Земли сельскохозяйственного назначения"
+   },
+   "timeZoneName":"МСК",
+   "timezoneOffset":"180",
+   "ownershipForm":{
+      "code":"14",
+      "name":"Муниципальная собственность"
+   },
+   "etpUrl":"https://i.rts-tender.ru/main/auction/Trade/Privatization/View.aspx?Id=135519&Guid=49731db1-72d7-4cf0-be40-6ddd6e864398#285081",
+   "deposit":74600.0,
+   "estateAddress":"Респ Крым Ленинский район, с. Чистопольское сельское поселение, за границами населенных пунктов, из земель КСП « Родина», лот №50-51, участок №16",
+   "attributes":[
+      {
+         "code":"DA_participationFee_EA(ZK)",
+         "fullName":"Размер взимаемой с победителя аукциона или иных лиц, с которыми заключается договор, платы оператору электронной площадки (размер устанавливается в соответствии с постановлением Правительства РФ от 10.05.2018 № 564)",
+         "attributeType":"Text(500)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":1
+      },
+      {
+         "code":"DA_contractSignPeriod__EA(ZK)",
+         "fullName":"Срок заключения договора",
+         "value":"49 лет",
+         "attributeType":"Text(100)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":2
+      },
+      {
+         "code":"DA_contractType_EA(ZK)",
+         "fullName":"Вид договора",
+         "value":{
+            "code":"договор_аренды_земельного_участка_Select",
+            "name":"договор аренды земельного участка"
+         },
+         "attributeType":"Select",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":3
+      },
+      {
+         "code":"DA_forSmallBusiness_EA(ZK)",
+         "fullName":"Только для МСП",
+         "attributeType":"Checker",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":4
+      },
+      {
+         "code":"DA_contractDate_EA(ZK)",
+         "fullName":"Срок аренды",
+         "attributeType":"Text(100)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":5
+      },
+      {
+         "code":"DA_landPrivilege_EA(ZK)",
+         "fullName":"Льгота по арендной плате",
+         "attributeType":"Text(500)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":6
+      },
+      {
+         "code":"DA_landRights_EA(ZK)",
+         "fullName":"Права на земельный участок",
+         "attributeType":"Text(500)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":7
+      },
+      {
+         "code":"DA_landRestrictions_EA(ZK)",
+         "fullName":"Ограничения прав на земельный участок",
+         "attributeType":"Text(500)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":8
+      },
+      {
+         "code":"DA_constructionParametersMax_EA(ZK)",
+         "fullName":"Максимально допустимые параметры разрешенного строительства объекта капитального строительства (при необходимости)",
+         "attributeType":"Text(1000)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":9
+      },
+      {
+         "code":"DA_constructionParametersMin_EA(ZK)",
+         "fullName":"Минимально допустимые параметры разрешенного строительства объекта капитального строительства (при необходимости)",
+         "attributeType":"Text(1000)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":10
+      },
+      {
+         "code":"DA_connectionETSN_EA(ZK)",
+         "fullName":"Возможность подключения (технологического присоединения) объектов капитального строительства к сетям инженерно-технического обеспечения (за исключением сетей электроснабжения) ",
+         "attributeType":"Text(500)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":11
+      },
+      {
+         "code":"DA_demolition_EA(ZK)",
+         "fullName":"Информация об обязательствах по сносу здания, сооружения, объекта незавершенного строительства, которые расположены на земельном участке",
+         "attributeType":"Text(500)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":16
+      },
+      {
+         "code":"DA_bringing_EA(ZK)",
+         "fullName":"Информация об обязательствах по приведению в соответствие с установленными требованиями здания, сооружения, объекта незавершенного строительства, которые расположены на земельном участке",
+         "attributeType":"Text(500)",
+         "group":{
+            "code":"NL250",
+            "name":"5.3 Лот_основная_информация",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":17
+      },
+      {
+         "code":"DA_depositTimeAndRules_EA(ZK)",
+         "fullName":"Срок и порядок внесения задатка",
+         "attributeType":"Text(500)",
+         "group":{
+            "code":"NL255",
+            "name":"5.4.2 Лот_информация_о_задатке_дин",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":1
+      },
+      {
+         "code":"DA_depositRefund_EA(ZK)",
+         "fullName":"Порядок возврата задатка",
+         "attributeType":"Text(500)",
+         "group":{
+            "code":"NL255",
+            "name":"5.4.2 Лот_информация_о_задатке_дин",
+            "displayGroupType":"LOT"
+         },
+         "sortOrder":2
+      }
+   ],
+   "depositElectronicPlatform":false,
+   "depositRecipientName":"ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"АУКЦИОНЫ КРЫМА\"",
+   "depositRecipientINN":"9102275160",
+   "depositRecipientKPP":"910201001",
+   "depositBankName":"РНКБ Банк (ПАО)",
+   "depositBIK":"043510607",
+   "depositPayAccount":"40702810541560000033",
+   "depositCorAccount":"30101810335100000607",
+   "depositTreasuryAccount":"",
+   "depositPurposePayment":"",
+   "hasAppeals":false,
+   "isStopped":false,
+   "auctionStartDate":"2023-10-09T07:00:00Z",
+   "biddStartTime":"2023-09-04T07:00:00Z",
+   "biddEndTime":"2023-10-04T08:00:00Z",
+   "versionId":"cca69832-0283-4f61-b1c8-00fcb023a2b7",
+   "noticeSignedData":{
+      "fileId":"64f24ef54a9ee0449d7df6c7",
+      "signatureId":"64f24f121790fc6a9d09e00b",
+      "fileName":"Извещение о торгах.json",
+      "fileSize":23361,
+      "uploadDate":"2023-09-01T20:52:05.714+00:00",
+      "hash":"4077bffec6bcf847c1b378c2f53954a3bd4bd901cc559674f673bdb4901a98f8",
+      "inactive":false
+   },
+   "egrkns":[
+      {
+         "id":"",
+         "number":"90:07:270601:781",
+         "name":""
+      }
+   ],
+   "egrnInfoRequestList":[
+      
+   ],
+   "noticeFirstVersionPublicationDate":"2023-09-01T20:53:15.524Z",
+   "isAnnulled":false
+}
