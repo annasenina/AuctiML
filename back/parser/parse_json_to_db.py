@@ -1,6 +1,6 @@
 import psycopg2
 import urllib.request, json
-
+from psycopg2.errorcodes import UNIQUE_VIOLATION
 
 def connect_to_db():
     connection = psycopg2.connect(    # connection - это объект, который отвечает за соединение с БД
@@ -31,13 +31,19 @@ def insert_json_to_db(data:dict):
     )
     cursor = connection.cursor()  # cursor - это объект, который отвечает за взаимодействие с БД
     # Делаем запрос
-    cursor.execute(f"""                  
-        INSERT
-        INTO
-        public.torgidata(lot_id, lot_data)
-        values('{data['id']}', '[{json.dumps(data)}]')
-        """)
-    connection.commit()
+    try:
+        cursor.execute(f"""                  
+            INSERT
+            INTO
+            public.torgidata(lot_id, lot_data)
+            values('{data['id']}', '[{json.dumps(data)}]')
+            """)
+        connection.commit()
+    except psycopg2.Error as e:
+        if e.pgcode == UNIQUE_VIOLATION:
+            print("Лот с таким номером уже существует в базе ", data['id'],  e)
+        else:
+            print("Неизвестная ошибка парсинга лота", data['id'],  e)
     cursor.close()
     connection.close()
 
